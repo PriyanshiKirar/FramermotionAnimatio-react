@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:palevioletred;
+ 
+}
+#firstdiv{
+  width: 30vw;
+  height: 40vh;
+  background-color:plum;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+h1{
+  color: black;
+  text-transform: capitalize;
+  font-size: 3vw;
+}
