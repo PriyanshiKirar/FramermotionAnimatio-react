@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion ,useState} from 'framer-motion';
 import React from 'react';
 
 const App = () => {
+  const [x,setx]=useState("0")
   return (
     <div>
       <motion.div
@@ -12,15 +13,21 @@ const App = () => {
         }}
         transition={{
           duration: 2,
-          delay: 3,
-          
+          delay: 1,  
         }}
+        drag
         id="firstdiv"
       >
-        <h1>hello</h1>
+        <motion.h1
+      whileTap={{
+        fontSize:'0.8vw'
+      }}
+      transition={{
+        ease:"anticipate"
+      }}
+        >hello</motion.h1>
       </motion.div>
     </div>
   );
 };
-
 export default App;
