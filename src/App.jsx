@@ -10,6 +10,7 @@ const App = () => {
           x: 300,
          backgroundColor:'pink',
          rotate:360,
+         borderRadius:"50%"
         }}
         transition={{
           duration: 2,
